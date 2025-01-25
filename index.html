@@ -1,0 +1,366 @@
+
+
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1500">		
+  <title>GuFlix_WEB</title>
+  <link rel="Shortcut Icon" type="image/ico" href="http://iptvextreme.eu/favicon.png" />  
+  <link rel="stylesheet" href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<style>				
+.my-iframe {
+background-color:#000;
+width: 100%;
+height: 87vh;
+}
+.carousel{
+    margin:2px;
+    height: 200px; 
+    perspective: 250px;       
+}
+.carousel .carousel-item {
+	width: 350px;
+	background: #fff;
+	border-radius: 10px;
+ padding: 2px;
+}
+.img-area {
+	width: 346px;
+	height: 100px;
+}
+.img-area img{
+width: 100%;
+height: 196px;
+border-radius: 10px;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 42px;
+	background: white;
+	border-radius: 0px;
+	font-size: 0;
+	box-shadow: 0 2px 2px 0 rgba(116,97,127,1.00);
+}
+nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+	line-height: 40px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #bfffea;
+	border-radius: 8px;
+ border: 1px black solid; 
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 49%;
+	height:40px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 49%;
+	height:40px;
+	left: 1px;
+}
+nav a:nth-child(2){
+	width: 49%;
+		height:40px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 49%;
+		height:40px;
+	left: 50.8%;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+  .btn3 {
+    	font: bold 15px Arial; 
+    	text-decoration: none; 
+    border-radius: 5px;        
+    text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+		 padding: 3px; 
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: 0px solid #000;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, .2);  
+  }
+  .btn3:active,
+  .btn3:focus,
+  .btn3:hover {
+   background-color: #bfffea;
+   color: #8098ff;
+
+   border: 1px solid #bfffea;
+   outline: none;
+  }
+  .btn:active,
+  .btn:focus,
+  .btn:hover {
+   color: #ffeba7;
+   outline: none;
+  } 
+    .btn:hove {
+   color: #ffeba7;
+   outline: none;
+  }
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/b99e675b6e.js"></script>
+
+<div class="wrapper">
+  <div class="sidebar">
+    <div class="bg_shadow"></div>
+    <div class="sidebar_inner">
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        
+        <div class="profile_info">
+            <div class="profile_imgg">
+<!-- <img src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/ico.gif" width="100px" height="100px" alt="profile_img"> -->
+              <img src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/logo4.png" width="200px" height="70px" alt="profile_img">
+            </div><br>
+            <div class="profile_data">
+                <p class="name">GuFlix GROUP</p>
+                <span><i class="fas fa-desktop"></i> Live Tv Channel</span>
+            </div>
+        </div>
+      
+        <ul class="siderbar_menu">
+            <li class="active">
+            				
+            			<a href=""target="">
+              <div class="icon"><i class="fas fa-home"></i></div>
+              <div class="title">Home WEB</div>
+              </a> 
+          </li>           
+          <li><a href="#">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="title">LIVE</div>
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              </a>
+            <ul class="accordion">	
+            <!-- <li><a href="https://popkorn-logo.github.io/Hosting/" class="active" target="if">🟢 TV1</a></li> -->
+            <!-- <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/ufabetcompany.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="_blank">🟢 TV2</a></li> -->
+            <!-- <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/sportinter.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="if">🟢 TV1</a></li> -->
+				 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/goal-th.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="if">🟢 TV1</a></li>
+            <!-- <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/gdplayertv.php?token=" class="" target="_blank">🟢 TV3</a></li> -->
+            <!-- <li><a href="https://dootv.streaming-fast.com/ais/ais2.php?token=" class="" target="_blank">🟢 TV4</a></li> -->
+                 <li><a href="https://dootv.streaming-fast.com/3bb/3bb.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="_blank">🟢 TV2</a></li>			 
+				 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/wacthtv.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="_blank">🟢 TV3</a></li>
+				 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/dooball2you.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="_blank">🟢 TV4</a></li>
+				 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/iam.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="_blank">🟢 TV5</a></li>
+            <!-- <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/dookeela.php?token=b43f07d20358990f3c9ff18bc06723eb" class="" target="if">🔴 TV3</a></li> -->
+                 <li><a href="http://localhost/dookeela2/3bbsports1/123456789/" class="" target="_blank">🔴 TV6</a></li>
+				 
+              </ul>
+          </li>  		  
+          <li><a href="#">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="title">RADIO</div>
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              </a>
+            <ul class="accordion">
+                 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/radio.php" class="active" target="if">🟢 RADIO</a></li>			
+              </ul>
+          </li>  		  
+          <li><a href="#">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="title">MOVIES</div>
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              </a>
+              <ul class="accordion">
+                 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/movies/sv1_indexmovies_cat.php?token=b43f07d20358990f3c9ff18bc06723eb" class="active" target="if">🟢 MOVIES</a></li>			
+              </ul>           
+          </li> 
+          <li><a href="#">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="title">SERIES</div>
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              </a>
+              <ul class="accordion">
+                 <li><a href="http://xtreamui.thddns.net:3883/sv1_indexseries_cat.php?token=b43f07d20358990f3c9ff18bc06723eb" class="active" target="if">🟢 SERIES</a></li>			
+              </ul>           
+          </li>
+          <li><a href="#">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="title">ANIME</div>
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              </a>
+              <ul class="accordion">
+                 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/anime/sv1_indexanime_cat.php?token=b43f07d20358990f3c9ff18bc06723eb" class="active" target="if">🟢 ANIME</a></li>			
+              </ul>           
+          </li> 		  
+          <li><a href="#">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="title">ADUL 18+</div>
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              </a>
+              <ul class="accordion">
+                 <li><a href="http://guflix.streaming-fast.com/vip_wiseplay/WEB/njav/18_password.php?token=b43f07d20358990f3c9ff18bc06723eb" class="active" target="">🟢 ADUL 18+</a></li>			
+              </ul>           
+          </li> 
+          <li><a href="http://action_exit">
+              <div class="icon"><i class="fas fa-sign-out-alt"></i></div>
+              <div class="title">Logout</div>
+              <div class="arrow"><i class=""></i></div>
+              </a>          
+          </li> 		  
+<br><br><center><font size="2" color="gold">Visitors Today 27</font></center>
+
+<br><br><center>
+<!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4888530,4,2004,112,35,00001001']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4888530&101" alt="best counter" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+<br><br></center>
+
+       <div class="logout_btn">
+            
+        </div>     
+    </div>
+  </div>
+  <div class="main_container">  
+  <br>
+  <br>
+<marquee scrolldelay="100"><font style="color:red">คำเตือน : รับชมเพื่อความบันเทิงส่วนตัวเท่านั้น... ห้ามซื้อขายโดยเด็ดขาด</font></marquee>
+  <br>
+<center>
+    <nav>
+      <a href="#" class="radio_wrap" data-radio="radio_1"><button class="btn3 mt-4">CATEGORY</button></a>
+      <a href="#" class="radio_wrap" data-radio="radio_2"><button class="btn3 mt-4">GUIDE</button></a>
+      <div class="animation start-home"></div>
+    </nav>
+</center>
+<div class="content">
+<!-- 
+<div class="radio_content radio_1">
+<div class="my-iframe">
+<iframe name="if" src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/main_web_dooball.php?token="width="100%" height="100%" frameborder="0" gesture="media" allow="" allowfullscreen></iframe>
+</div></div>
+-->
+<!-- 
+<div class="radio_content radio_1">
+<div class="my-iframe">
+<iframe name="if" src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/aisbk.php?token=b43f07d20358990f3c9ff18bc06723eb"width="100%" height="100%" frameborder="0" gesture="media" allow="" allowfullscreen></iframe>
+</div></div>
+-->
+<div class="radio_content radio_1">
+<div class="my-iframe">
+<iframe name="if" src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/inwiptv.php?token=b43f07d20358990f3c9ff18bc06723eb"width="100%" height="100%" frameborder="0" gesture="media" allow="" allowfullscreen></iframe>
+</div></div>
+
+<div class="radio_content radio_2">
+<div class="my-iframe">
+<iframe name="if" src="https://dooball66x.com/iframe/index_iframe.html"width="100%" height="100%" frameborder="0" gesture="media" allow="" allowfullscreen></iframe>
+</div></div></div>
+  </div>
+</div>
+<!-- partial -->
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="http://guflix.streaming-fast.com/vip_wiseplay/WEB/script.js"></script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.carousel').carousel({
+			padding: 200
+	});
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	}
+  });  
+
+
+</script> 
+</body>
+
+<script>
+/* by default hide all radio_content div elements except first element */
+			$(".content .radio_content").hide();
+			$(".content .radio_content:first-child").show();
+
+			/* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
+			$(".radio_wrap").click(function(){
+			  var current_raido = $(this).attr("data-radio");
+			  $(".content .radio_content").hide();
+			  $("."+current_raido).show();
+			})
+</script>
+
+<script>	
+if (navigator.onLine) {
+  console.log("You are online");
+} else {
+  console.log("You are offline");
+}		
+</script>
+
+</html>
+
+
+
