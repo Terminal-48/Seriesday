@@ -1,73 +1,300 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <title>Wiseplay</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10, user-scalable=yes">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeTV</title>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <script>
+        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+    </script>
     <style>
         body {
+            margin: 10;
+            padding: 10;
             background-color: #000;
-            color: #fff;
-            margin: 0;
+            display: fit;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #player-container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #111;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        #player {
+            width: 100%;
+        }
+
+        #logo-overlay {
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            width: 25px; /* ปรับขนาดโลโก้ */
+            height: 25px; /* ปรับขนาดโลโก้ */
+            opacity: 0.7;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #logo-overlay img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .channel {
             text-align: center;
-            font-family: Arial, sans-serif;
         }
-        img {
-            border-radius: 20px;
-            border: 1px solid #87CEFA;
-            padding: 2px;
-            margin: 3px;
-            height: 80px;
-            width: 80px;
+
+        .channel img {
+            width: 40px;
+            height: 40px;
         }
-        .popup, .overlay, [style*="position: fixed"], [style*="position: absolute"] {
-            display: none !important;
+
+        .channel-name {
+            color: white;
+            margin-top: 5px;
+            font-size: 10px;
         }
+
     </style>
-    <script>
-        window.onload = function () {
-            // ซ่อนอิลิเมนต์ที่มีการใช้ ID หรือ Class ที่เกี่ยวข้องกับโฆษณา
-            var adElements = document.querySelectorAll('[id*="ad"], [class*="ad"], [src*="ads"]');
-            adElements.forEach(function(element) {
-                element.style.display = 'none';
-            });
-
-
-    </script>
-</head>
+<script defer data-domain="kitti2025.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><script defer data-domain="kitti2025.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
 <body>
+    <div id="player-container">
+        <div id="player"></div>
+        <div id="logo-overlay">
+            <img src="https://img5.pic.in.th/file/secure-sv1/11zon_resized-3bb1f59abd215d288.png" alt="Logo">
+        </div>
+    </div>
 
-<a href="intent://dookeela.live/live-tv/golfchannel#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live%20Program;S.referer=https://dookeela.live/;scheme=https;type=video/mp4;end">
-<img class="channel" src="https://www.dropbox.com/scl/fi/2hikognu57vptumf36daa/Golf-Channel.jpg?rlkey=5594v1jzutm2g0nnplbbm7x3y&dl=1" alt="" onerror="this.onerror=null; this.src='https://as2.ftcdn.net/jpg/03/53/54/91/1000_F_353549130_ahtWCQjjJzhzP8ocg1qR3s2E3Cz1VR3w.jpg';"></a>
-<a href="intent://dookeela.live/live-tv/3bbsports1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live%20Program;S.referer=https://dookeela.live/;scheme=http;type=video/mp4;end">
-<img class="channel" src="https://dookeela.live/uploads/1720429672.png" alt="" onerror="this.onerror=null; this.src='https://as2.ftcdn.net/jpg/03/53/54/91/1000_F_353549130_ahtWCQjjJzhzP8ocg1qR3s2E3Cz1VR3w.jpg';"></a>
-<a href="intent://oral.thaim3u.com/doolive4k-tv/siamsport-1/chunks.m3u8#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=http;type=video/mp4;end">
-<img class="channel" src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0021.png" alt="" onerror="this.onerror=null; this.src='https://as2.ftcdn.net/jpg/03/53/54/91/1000_F_353549130_ahtWCQjjJzhzP8ocg1qR3s2E3Cz1VR3w.jpg';"></a>
-<a href="intent://appdootv2.dootvde.com:1935/live/50015_nation.stream.smil/playlist.m3u8#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=http;type=video/mp4;end">
-<img class="channel" src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0021.png" alt="" onerror="this.onerror=null; this.src='https://as2.ftcdn.net/jpg/03/53/54/91/1000_F_353549130_ahtWCQjjJzhzP8ocg1qR3s2E3Cz1VR3w.jpg';"></a>
-<a href="intent://appdootv2.dootvde.com:1935/live/50015_nation.stream.smil/playlist.m3u8#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=http;type=video/mp4;end">
-<img class="channel" src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0021.png" alt="" onerror="this.onerror=null; this.src='https://as2.ftcdn.net/jpg/03/53/54/91/1000_F_353549130_ahtWCQjjJzhzP8ocg1qR3s2E3Cz1VR3w.jpg';"></a>
+    <div class="channel-grid">
+  
+        <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/5/5.mpd', '87db4361f7894655a4656e9c8b935a02', 'b025a4b950df41158a87cfc8d6f2ac34')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/ch5new.logo.png" alt="5 HD">
+            <div class="channel-name">5HD</div>
+        </div>
 
+        
+        <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/2/2.mpd', 'ca20a93cf8e3421dafbd5bdb1990081b', '86ae86a7391c481ea93eecdb740f0a14')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0001.png" alt="Channel 2 Logo">
+            <div class="channel-name">NBT</div>
+        </div>
 
+        
+        <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/3/3.mpd', '4d4426a505f64382a9841155d721cee6', '0f4770219ccb4be5836a7517057e51c3')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0014.png" alt="Channel 3 Logo">
+            <div class="channel-name">TPBS</div>
+        </div>
 
+        <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/4/4.mpd', '1e98456bcbea44b7ad05831387e364ef', '3d14fd4f9d3149a79b35a7124fccbd67')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/ALTV.PNG" alt="ALTV Logo">
+            <div class="channel-name">ALTV</div>
+        </div>
 
+        
+        <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/7/7.mpd', '6187523f92b9475bb5b192f70cef1342', '5119311f482144d58dacabc5bc1fa4ba')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/T-SPorts_7_Final.png" alt="Sports 7 Logo">
+            <div class="channel-name">Sports 7</div>
+                    </div>
+     <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/10/10.mpd',       '5da46688fd1e4ed5b085a12519b9dc4e',        'fd07bcf33823447180f53f6540f74ccb3')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0048.png" alt="Channel 3 Logo">
+            <div class="channel-name">TPTV</div>
+                                </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/16/16.mpd', '9ebedc957e934d2b9023e4e60b97af73',
+'7bcb4363df74457bbafedec1a864e6b6')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/R2_0053.png" alt="Channel 2 Logo">
+            <div class="channel-name">TNN16</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/18/18.mpd', '333de6034a1d45fe91c829539caf1149',
+'2710efc048ca44bba4c2b57397989a26')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/JKN18.png">
+            <div class="channel-name">JKN18</div>
+               </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/22/22.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0021.png">
+            <div class="channel-name">Nation</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png">
+            <div class="channel-name">workpiont</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/24/24.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0054.png">
+            <div class="channel-name">true4u</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/25/25.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0019.png">
+            <div class="channel-name">Gmm25</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/27/27.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0006.png">
+            <div class="channel-name">CH8</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0016.png">
+            <div class="channel-name">Mono29</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/30/30mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/MCOT_new.png">
+            <div class="channel-name">McotHD</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/31/31.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0012.png">
+            <div class="channel-name">ONE31</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png">
+            <div class="channel-name">ไทยรัฐ</div>
+            
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/33/33.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/LOGO3HD.PNG">
+            <div class="channel-name">3HD</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/AmarinTV_NEW512.png">
+            <div class="channel-name">Amarintv</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/35/35.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0018.png">
+            <div class="channel-name">7HD</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/36/36.mpd')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/PPTV_2024e.jpg">
+            <div class="channel-name">PPTV</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/101/101.mpd', 'dac6cbd9d17a451bb76386f52469e0e9',
+'2e2ac52cadf843459915eaa1a9b95e48')">
+            <img src="https://img2.pic.in.th/pic/AsianHit.png">
+            <div class="channel-name">AsianHiT</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/103/103.mpd', '9c5735afb4fd402580360aed8364469c',
+'128d55d9ac2b47ad85f86b5d08320179')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png">
+            <div class="channel-name">HBOHD</div>
+            </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/104/104.mpd', '0db89bae851440a5994f5893ad480494',
+'d88ef77eaedf4451a65be2e0bf6eabde')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0149.png">
+            <div class="channel-name">HBOSig</div>
+                 </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/105/105.mpd', '7c04b8e7aa524afea879b2ed1aef8242',
+'91e72b75fcb94c3bb36cceb741afd621')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0151.png">
+            <div class="channel-name">HBOhit</div>       
+             </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/106/106.mpd', '07b138f30ad3441ca5a2f476e550af25',
+'826ee4deef4b45cfafd5f79a591b15c6')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0150.png">
+            <div class="channel-name">HBOfam</div>       
+            </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/107/107.mpd', 'f48caba466394e93b50780f21798787a',
+'9a074a10db4342e7937076b3e52f6029')">
+            <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0147.png">
+            <div class="channel-name">Cinemax</div>       
+              </div>
+     <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/302/302.mpd', 'ad2371259d34404cb89d54a4dc88dcd3',
+'1ba155e345c4456ba891cbee9b3e1c4c')">
+            <img src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon//Cartoonito.png">
+            <div class="channel-name">Cartoonito</div>       
+            
+                 </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/304/304.mpd', '641c3f0e676d49d18c2082e093380e69',
+'e06f3a2e327643249c3831ab199c4015')">
+            <img src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0156.png">
+            <div class="channel-name">Nick Jr</div>
+           </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/303/303.mpd', '9130a6448a74430794d355b48b56a64c',
+'c2f4d3288cdb43cf81e519ceb414dd6f')">
+            <img src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO_Nickelodeon2.png">
+            <div class="channel-name">Nickelodeon</div>       
+            </div>
+            <div class="channel" onclick="changeChannel('https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/301/301.mpd',
+'f140b94c73ab4ef5b96da7f49afb1154',
+'85e4ef232c6e460f888eb20f651d66e3')">
+            <img src="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//0171.png">
+            <div class="channel-name">CN</div>       
+                  </div>
+            <div class="channel" onclick="changeChannel('https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/401/401.mpd',
+'678bbba596584ad895d2923fb0255e82',
+'c55471086c824112b217743a31abdf8f')">
+           <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon//3BBsports1_new.png">
+            <div class="channel-name">3bbSport</div>  
 
+ 
+            
+            
+            
+        </div>
+        </div>
+        </div>
+    </div>
 
+    <script>
+        var playerInstance = jwplayer("player");
 
+        function changeChannel(file, keyId, key) {
+           playerInstance.load([{
+                file: file,
+                drm: {
+                    clearkey: {
+                        keyId: keyId,
+                        key: key
+                    }
+                },
+                type: "dash"
+            }]);
+            playerInstance.play();
 
+            var logoOverlay = document.getElementById('logo-overlay');
+            logoOverlay.style.display = 'block';
+            logoOverlay.style.opacity = '0.7';
 
+            
+            setTimeout(() => {
+                logoOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    logoOverlay.style.display = 'none';
+                }, 500);
+            }, 5000);
+        }
 
-
-
-
-
-
-
-
-   
-    
-    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+     
+        playerInstance.setup({
+            playlist: [{
+                sources: [
+                    {
+                        type: "dash",
+                        file: 'https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/5/5.mpd',
+                        drm: {
+                            clearkey: {
+                                keyId: "87db4361f7894655a4656e9c8b935a02",
+                                key: "b025a4b950df41158a87cfc8d6f2ac34"
+                            }
+                        },
+                        label: "1080HD"
+                    }
+                ]
+            }],
+            width: "100%",
+            aspectratio: "16:9",
+            autostart: true
+        });
+    </script>
 </body>
 </html>
