@@ -1,0 +1,63 @@
+{
+  "name": "ซีรี่ย์ญี่ปุ่น",
+  "author": "อัพเดท 27/04/2025",
+  "info": "",
+  "image": "https://www.serieday-hd.com/wp-content/uploads/2023/02/seriesday-logo.png",
+  "url": "https://raw.githubusercontent.com/Terminal-48/Seriesday/main/ซีรี่ย์ญี่ปุ่น.w3u",
+  "groups": [
+    {
+      "name": "โตเกียว ฮอลิเดย์ [ยังไม่จบ]",
+      "image": "https://www.serieday-hd.com/wp-content/uploads/2025/04/Tokyo-Holiday-2025-187x269.jpg",
+      "stations": [
+        {
+          "name": "ตอนที่ 1",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/04/Tokyo-Holiday-2025.jpg",
+          "url": "https://main.24playerhd.com/m3u8/33137663f96826df1fd09ec6/33137663f96826df1fd09ec6438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 2",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/04/Tokyo-Holiday-2025.jpg",
+          "url": "https://main.24playerhd.com/m3u8/c4b071c30eab8216170ab1ce/c4b071c30eab8216170ab1ce438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 3",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/04/Tokyo-Holiday-2025.jpg",
+          "url": "https://main.24playerhd.com/m3u8/767854ed8e1fa4ee7101a671/767854ed8e1fa4ee7101a671438.m3u8"
+        }
+      ]
+    },
+    {
+      "name": "รักบทใหม่ของยัยซินเดอเรลล่า [จบแล้ว]",
+      "image": "https://www.serieday-hd.com/wp-content/uploads/2025/01/Sharehouse-Cinderella-2024-187x269.jpg",
+      "stations": [
+        {
+          "name": "ตอนที่ 1",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/01/Sharehouse-Cinderella-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/a7d2941c30d5797ccd2e26b2/a7d2941c30d5797ccd2e26b2438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 2",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/01/Sharehouse-Cinderella-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/45a1d8ad2a6ec5776746a119/45a1d8ad2a6ec5776746a119438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 3",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/01/Sharehouse-Cinderella-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/36c9fc178f757c3dd86a5ab6/36c9fc178f757c3dd86a5ab6438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 4",
+          "info": "พากย์ไทย",
+          "image": "https://www.serieday-hd.com/wp-content/uploads/2025/01/Sharehouse-Cinderella-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/5438c4d49d7b3a89c8dc323d/5438c4d49d7b3a89c8dc323d438.m3u8"
+        }
+      ]
+    }
+  ]
+}
