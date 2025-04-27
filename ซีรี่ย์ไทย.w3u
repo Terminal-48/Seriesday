@@ -1,0 +1,51 @@
+{
+  "name": "ซีรี่ย์ไทย",
+  "author": "อัพเดทล่าสุด 27/04/2025",
+  "info": "",
+  "image": "https://www.serieday-hd.com/wp-content/uploads/2023/02/seriesday-logo.png",
+  "groups": [
+    {
+      "name": "มรดกอาถรรพ์ [จบแล้ว]",
+      "image": "https://www.serieday-hd.com/wp-content/uploads/2024/01/The-Bequeathed-2024-187x269.jpg",
+      "stations": [
+        {
+          "name": "ตอนที่ 1",
+          "info": "พากย์ไทย",
+          "image": "https://www.seriesday.com/wp-content/uploads/2024/01/The-Bequeathed-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/0f16448a2f8b6e12a975adab/0f16448a2f8b6e12a975adab438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 2",
+          "info": "พากย์ไทย",
+          "image": "https://www.seriesday.com/wp-content/uploads/2024/01/The-Bequeathed-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/6df280415376185aea0ddd2a/6df280415376185aea0ddd2a438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 3",
+          "info": "พากย์ไทย",
+          "image": "https://www.seriesday.com/wp-content/uploads/2024/01/The-Bequeathed-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/5219a96c8264321049acd99f/5219a96c8264321049acd99f438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 4",
+          "info": "พากย์ไทย",
+          "image": "https://www.seriesday.com/wp-content/uploads/2024/01/The-Bequeathed-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/11eac08ba60ac7999bb53380/11eac08ba60ac7999bb53380438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 5",
+          "info": "พากย์ไทย",
+          "image": "https://www.seriesday.com/wp-content/uploads/2024/01/The-Bequeathed-2024.jpg",
+          "url": "https://main.24playerhd.com/m3u8/60970c0c34625d759508c10d/60970c0c34625d759508c10d438.m3u8"
+        },
+        {
+          "name": "ตอนที่ 6",
+          "info": "พากย์ไทย",
+          "image": "https://www.seriesday.com/wp-content/uploads/2024/01/The-Bequeathed-2024.jpg",
+          "url": "https://main.24playerhd.com/newplaylist/Failed to connect to MySQL - Too many connections/Failed to connect to MySQL - Too many connections.m3u8"
+        }
+      ]
+    }
+  ],
+  "url": "https://raw.githubusercontent.com/Popkorn-Logo/Seriesday/main/ซีรี่ย์ไทย.w3u"
+}
